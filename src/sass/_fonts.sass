@@ -1,0 +1,47 @@
+//FONTS
+=fontpath($name, $name1, $file)
+	src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"), url("../fonts/" + $file + ".woff") format("woff")
+=fontdefault($style, $weight, $name)
+	font-family: $name
+	font-style: $style
+	font-weight: $weight
+
+
+$familyBillabong: 'Billabong'
+$familyProxima: 'ProximaNova'
+
+=billabong
+	font-family: 'Billabong', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif
+=proxima
+	font-family: 'ProximaNova', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif
+
+//Billabong
+@font-face
+	+fontdefault(normal, 400, $familyBillabong)
+	+fontpath('Billabong', 'billabong', Billabong)
+
+
+// ProximaNova
+@font-face
+	+fontdefault(normal, 200, $familyProxima)
+	+fontpath('ProximaNova-Light', 'ProximaNova-Light', ProximaNova-Light)
+
+@font-face
+	+fontdefault(italic, 200, $familyProxima)
+	+fontpath('ProximaNova-LightIt', 'ProximaNova-LightIt', ProximaNova-LightIt)
+
+@font-face
+	+fontdefault(normal, 400, $familyProxima)
+	+fontpath('ProximaNova-Regular', 'ProximaNovaRegular', ProximaNova-Regular)
+
+@font-face
+	+fontdefault(italic, 400, $familyProxima)
+	+fontpath('ProximaNova-RegularIt', 'ProximaNova-RegularIt', ProximaNova-RegularIt)
+
+@font-face
+	+fontdefault(normal, 700, $familyProxima)
+	+fontpath('ProximaNova-Bold', 'ProximaNova-Bold', ProximaNova-Bold)
+
+@font-face
+	+fontdefault(italic, 700, $familyProxima)
+	+fontpath('ProximaNova-BoldIt', 'ProximaNova-BoldIt', ProximaNova-BoldIt)

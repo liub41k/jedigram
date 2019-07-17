@@ -1,0 +1,43 @@
+.header
+	background-color: $four
+	padding: 10px 0
+	&__inner
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__search
+		padding: 0 20px
+
+.logo
+	&__link
+		display: flex
+		align-items: center
+		+billabong
+		font-weight: 400
+		font-size: 40px
+	&__icon
+		width: 50px
+		margin-right: 8px
+	span
+		padding-left: 20px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			width: 2px
+			height: 50%
+			background-color: #fff
+
+
+.nav
+	display: flex
+	align-items: center
+	&__link
+		display: block
+		&:not(:last-child)
+			margin-right: 10px
+	svg
+		width: 50px

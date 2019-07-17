@@ -1,0 +1,29 @@
+.person
+	padding: 60px 0
+	&__inner
+		display: flex
+		align-items: center
+	&__img
+		+circle(150)
+		+cover
+		background-position: top center
+		margin: 0 100px 0 50px
+	&__title
+		margin-bottom: 20px
+	&__info
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+	&__item
+		font-weight: 300
+		&:not(:last-child)
+			margin-right: 40px
+		span
+			font-weight: 700
+
+
+
+.title
+	font-size: 28px
+	line-height: 1.2
+	font-weight: 400
