@@ -4,7 +4,7 @@ export default class PictureService {
 
 	getImage = async() => {
 		
-		const res = await fetch(`${this._apiBase}/615`)
+		const res = await fetch(`${this._apiBase}/650`)
 		
 		if (!res.ok) {
 			throw new Error(`Could not fetch image, received ${ res.status }`)

@@ -1,0 +1,19 @@
+.gallery
+	&__content
+		padding-top: 40px
+		position: relative
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		margin: -14px
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 1px
+			top: 0
+			left: 0
+			background-color: $gray
+	&__item
+		width: calc(100%/3)
+		padding: 14px
