@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/jedigram/static/css/main.751e5b75.chunk.css",
-    "main.js": "/jedigram/static/js/main.dd51b49b.chunk.js",
-    "main.js.map": "/jedigram/static/js/main.dd51b49b.chunk.js.map",
+    "main.css": "/jedigram/static/css/main.65819f14.chunk.css",
+    "main.js": "/jedigram/static/js/main.9313cbbc.chunk.js",
+    "main.js.map": "/jedigram/static/js/main.9313cbbc.chunk.js.map",
     "runtime~main.js": "/jedigram/static/js/runtime~main.7e4f2ff3.js",
     "runtime~main.js.map": "/jedigram/static/js/runtime~main.7e4f2ff3.js.map",
-    "static/js/2.4c9ecbe6.chunk.js": "/jedigram/static/js/2.4c9ecbe6.chunk.js",
-    "static/js/2.4c9ecbe6.chunk.js.map": "/jedigram/static/js/2.4c9ecbe6.chunk.js.map",
+    "static/js/2.9b0e484b.chunk.js": "/jedigram/static/js/2.9b0e484b.chunk.js",
+    "static/js/2.9b0e484b.chunk.js.map": "/jedigram/static/js/2.9b0e484b.chunk.js.map",
     "index.html": "/jedigram/index.html",
-    "precache-manifest.0a9e5f28d6378a6da569262e8450ffd1.js": "/jedigram/precache-manifest.0a9e5f28d6378a6da569262e8450ffd1.js",
+    "precache-manifest.b936546e958c817544b0b655250652ad.js": "/jedigram/precache-manifest.b936546e958c817544b0b655250652ad.js",
     "service-worker.js": "/jedigram/service-worker.js",
-    "static/css/main.751e5b75.chunk.css.map": "/jedigram/static/css/main.751e5b75.chunk.css.map",
+    "static/css/main.65819f14.chunk.css.map": "/jedigram/static/css/main.65819f14.chunk.css.map",
     "static/media/app.sass": "/jedigram/static/media/ProximaNova-RegularIt.7cda35f9.woff",
     "static/media/bb8.61cde300.svg": "/jedigram/static/media/bb8.61cde300.svg",
     "static/media/death-star.a267b406.svg": "/jedigram/static/media/death-star.a267b406.svg",
+    "static/media/heart.b6a45e1b.svg": "/jedigram/static/media/heart.b6a45e1b.svg",
     "static/media/yoda.243f7214.svg": "/jedigram/static/media/yoda.243f7214.svg"
   }
 }
