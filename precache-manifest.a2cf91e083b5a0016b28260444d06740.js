@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "35e6998475d24da153159ec60d1b614f",
+    "revision": "35b7288922b806c52ea0b31530021d3e",
     "url": "/jedigram/index.html"
   },
   {
-    "revision": "815a5c8b42fd0595f2b6",
-    "url": "/jedigram/static/css/main.65819f14.chunk.css"
+    "revision": "5359f5ab64b9f3f3e63b",
+    "url": "/jedigram/static/css/main.b1dc924d.chunk.css"
   },
   {
-    "revision": "d92987a59e5bbece5bb3",
-    "url": "/jedigram/static/js/2.7366d0f7.chunk.js"
+    "revision": "6716310af1a4b86e824f",
+    "url": "/jedigram/static/js/2.89fd307b.chunk.js"
   },
   {
-    "revision": "815a5c8b42fd0595f2b6",
-    "url": "/jedigram/static/js/main.48650cb4.chunk.js"
+    "revision": "5359f5ab64b9f3f3e63b",
+    "url": "/jedigram/static/js/main.fa475161.chunk.js"
   },
   {
     "revision": "b889633a075d94c10eb0",
@@ -88,7 +88,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jedigram/static/media/heart.b6a45e1b.svg"
   },
   {
-    "revision": "243f72144aa51350fc248d6bcde945a7",
-    "url": "/jedigram/static/media/yoda.243f7214.svg"
+    "revision": "954fe06d14cc4ede05ef4d3aa36a8a32",
+    "url": "/jedigram/static/media/yoda.954fe06d.svg"
   }
 ]);
