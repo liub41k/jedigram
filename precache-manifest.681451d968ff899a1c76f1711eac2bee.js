@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e988700a103b5d3aa34dff81f9ac47e0",
+    "revision": "6d896a5a44d8adf8ae9131e91478fa90",
     "url": "/jedigram/index.html"
   },
   {
-    "revision": "71c5c22f011656fd7342",
-    "url": "/jedigram/static/css/main.b1dc924d.chunk.css"
+    "revision": "8f4c0d4e981a2417bcfb",
+    "url": "/jedigram/static/css/main.571932e4.chunk.css"
   },
   {
     "revision": "75700bcc1accb5abb4fe",
     "url": "/jedigram/static/js/2.4df69363.chunk.js"
   },
   {
-    "revision": "71c5c22f011656fd7342",
-    "url": "/jedigram/static/js/main.0ad84614.chunk.js"
+    "revision": "8f4c0d4e981a2417bcfb",
+    "url": "/jedigram/static/js/main.c3ab5f89.chunk.js"
   },
   {
     "revision": "b889633a075d94c10eb0",
