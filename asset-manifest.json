@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/jedigram/static/css/main.278011ba.chunk.css",
-    "main.js": "/jedigram/static/js/main.537b20c4.chunk.js",
-    "main.js.map": "/jedigram/static/js/main.537b20c4.chunk.js.map",
+    "main.css": "/jedigram/static/css/main.272ad22e.chunk.css",
+    "main.js": "/jedigram/static/js/main.4a283e6a.chunk.js",
+    "main.js.map": "/jedigram/static/js/main.4a283e6a.chunk.js.map",
     "runtime~main.js": "/jedigram/static/js/runtime~main.7e4f2ff3.js",
     "runtime~main.js.map": "/jedigram/static/js/runtime~main.7e4f2ff3.js.map",
-    "static/js/2.a92da3d9.chunk.js": "/jedigram/static/js/2.a92da3d9.chunk.js",
-    "static/js/2.a92da3d9.chunk.js.map": "/jedigram/static/js/2.a92da3d9.chunk.js.map",
+    "static/css/2.4e8ea85d.chunk.css": "/jedigram/static/css/2.4e8ea85d.chunk.css",
+    "static/js/2.4d4b5495.chunk.js": "/jedigram/static/js/2.4d4b5495.chunk.js",
+    "static/js/2.4d4b5495.chunk.js.map": "/jedigram/static/js/2.4d4b5495.chunk.js.map",
     "index.html": "/jedigram/index.html",
-    "precache-manifest.66e7e17ac3b7882e599ae653c10cfb82.js": "/jedigram/precache-manifest.66e7e17ac3b7882e599ae653c10cfb82.js",
+    "precache-manifest.cbf7c7c8a1e0fa786d0eb97d08ff4f01.js": "/jedigram/precache-manifest.cbf7c7c8a1e0fa786d0eb97d08ff4f01.js",
     "service-worker.js": "/jedigram/service-worker.js",
-    "static/css/main.278011ba.chunk.css.map": "/jedigram/static/css/main.278011ba.chunk.css.map",
+    "static/css/2.4e8ea85d.chunk.css.map": "/jedigram/static/css/2.4e8ea85d.chunk.css.map",
+    "static/css/main.272ad22e.chunk.css.map": "/jedigram/static/css/main.272ad22e.chunk.css.map",
     "static/media/app.sass": "/jedigram/static/media/ProximaNova-RegularIt.7cda35f9.woff",
     "static/media/bb8.61cde300.svg": "/jedigram/static/media/bb8.61cde300.svg",
     "static/media/death-star.a267b406.svg": "/jedigram/static/media/death-star.a267b406.svg",
     "static/media/heart.b6a45e1b.svg": "/jedigram/static/media/heart.b6a45e1b.svg",
+    "static/media/slick-theme.css": "/jedigram/static/media/slick.f97e3bbf.svg",
     "static/media/yoda.954fe06d.svg": "/jedigram/static/media/yoda.954fe06d.svg"
   }
 }
