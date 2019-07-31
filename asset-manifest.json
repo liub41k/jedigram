@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/jedigram/static/css/main.272ad22e.chunk.css",
-    "main.js": "/jedigram/static/js/main.486abbd2.chunk.js",
-    "main.js.map": "/jedigram/static/js/main.486abbd2.chunk.js.map",
+    "main.js": "/jedigram/static/js/main.0a028e88.chunk.js",
+    "main.js.map": "/jedigram/static/js/main.0a028e88.chunk.js.map",
     "runtime~main.js": "/jedigram/static/js/runtime~main.7e4f2ff3.js",
     "runtime~main.js.map": "/jedigram/static/js/runtime~main.7e4f2ff3.js.map",
     "static/css/2.4e8ea85d.chunk.css": "/jedigram/static/css/2.4e8ea85d.chunk.css",
     "static/js/2.4d4b5495.chunk.js": "/jedigram/static/js/2.4d4b5495.chunk.js",
     "static/js/2.4d4b5495.chunk.js.map": "/jedigram/static/js/2.4d4b5495.chunk.js.map",
     "index.html": "/jedigram/index.html",
-    "precache-manifest.d078e4bfe9230c3e8289ae0baa89e0f5.js": "/jedigram/precache-manifest.d078e4bfe9230c3e8289ae0baa89e0f5.js",
+    "precache-manifest.eb90a2b5cb56285df62ab7853f3287de.js": "/jedigram/precache-manifest.eb90a2b5cb56285df62ab7853f3287de.js",
     "service-worker.js": "/jedigram/service-worker.js",
     "static/css/2.4e8ea85d.chunk.css.map": "/jedigram/static/css/2.4e8ea85d.chunk.css.map",
     "static/css/main.272ad22e.chunk.css.map": "/jedigram/static/css/main.272ad22e.chunk.css.map",
