@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/jedigram/precache-manifest.1607f55284ebf180a155e2a7a272bbe4.js"
+  "/jedigram/precache-manifest.d9aeef65c57ab36e6ad610961eac84f2.js"
 );
 
 self.addEventListener('message', (event) => {
