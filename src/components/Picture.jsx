@@ -2,27 +2,49 @@ import React, { Component } from 'react';
 
 import { ReactComponent as Heart } from '../img/heart.svg';
 
+import ImgService from '../services/picture-service';
+
+import LazyLoad from 'react-lazyload';
+
+
 export default class Picture extends Component {
-	state = {
-		liked: false
+
+	imgService = new ImgService();
+
+	state = {}
+	
+	componentDidMount() {
+		this.getImg();
 	}
 
-	onLike = (id) => {
+	getImg() {
+		this.imgService.getImage()
+			.then((url) => {
+				this.setState({
+					url,
+					likes: Math.ceil(Math.random()*100),
+					liked: false
+				})
+			})
+	}
 
-		this.props.likeFn(id)
-
-		this.setState(({liked}) => {
-			return {
-				liked: !liked
+	onLike = () => {
+		this.setState((state) => {
+			
+			const newItem = { ...state, liked: !state.liked }
+			if (!newItem.liked) {
+				newItem.likes -= 1
+			} else {
+				++newItem.likes
 			}
+			return newItem
 		})
 	}
 
+
 	render() {
 
-		// const { info } = this.props
-		const { url, id, likes } = this.props.info
-		const { liked } = this.state
+		const { url, likes, liked } = this.state
 
 		let svgClass
 		if (liked) {
@@ -30,14 +52,16 @@ export default class Picture extends Component {
 		}
 
 		return (
-			<div className="picture"
-				style={{ backgroundImage: `url(${ url })`}}
-				onDoubleClick={ () => { this.onLike(id) }}>
-					<div className="picture__likes">
-						<Heart className={svgClass} />
-						<span>{ likes }</span>
-					</div>
-			</div>
+			<LazyLoad height={300} offset={100} once>
+				<div className="picture"
+					onDoubleClick={ this.onLike }
+					style={{ backgroundImage: `url(${url})` }}>
+						<div className="picture__likes">
+							<Heart className={svgClass} />
+							<span>{ likes }</span>
+						</div>
+				</div>
+			</LazyLoad>
 		)
 	}
 }

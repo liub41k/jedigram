@@ -10,7 +10,7 @@ export default class PictureService {
 			throw new Error(`Could not fetch image, received ${ res.status }`)
 		}
 
-		return await res
+		return await res.url
 	}
 
 	// getImage = async(width, height) => {

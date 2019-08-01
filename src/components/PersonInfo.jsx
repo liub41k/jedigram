@@ -6,48 +6,51 @@ import { withSwapi } from './hoc-helpers';
 
 class PersonInfo extends Component {
 
+	static defaultProps = {
+		itemId: 4
+	}
+
 	state = {
-		item: null,
-		image: null
+		item: null
 	}
 
 	componentDidMount() {
 		this.updateItem()
 	}
 
-	componentDidUpdate(prevProps) {
-		if (this.props.itemId !== prevProps.itemId) {
-			this.updateItem();
-		}
-	}
+	// componentDidUpdate(prevProps) {
+	// 	if (this.props.itemId !== prevProps.itemId) {
+	// 		this.updateItem();
+	// 	}
+	// }
 
 	updateItem() {
-		const { itemId, getData, getImageUrl } = this.props;
+		const { itemId, getData } = this.props;
+		
 		if (!itemId) {
 			return;
 		}
 		getData(itemId)
 			.then((item) => {
 				this.setState( {
-					item,
-					image: getImageUrl(item)
+					item
 				} );
 			})
 	}
 
 	render() { 
 
-		const { item, image } = this.state;
+		const { item } = this.state;
 		if (!item) {
 			return <Loader />
 		}
 
-		const { name } = item;
+		const { name, avatar } = item;
 
 		return (
 			<div className="person">
 				<div className="person__inner inner">
-					<div className="person__img" style={{ backgroundImage: `url(${ image })`}}></div>
+					<div className="person__img" style={{ backgroundImage: `url(${ avatar })`}}></div>
 					<div className="person__content">
 						<h2 className="person__title title">{ name }</h2>
 						<ul className="person__info">
@@ -66,9 +69,7 @@ class PersonInfo extends Component {
 
 const mapMethodsToProps = (swapi) => {
 	return {
-		getData: swapi.getPerson,
-		getImageUrl: swapi.getPersonImg,
-		itemId: 4
+		getData: swapi.getPerson
 	}
 };
 

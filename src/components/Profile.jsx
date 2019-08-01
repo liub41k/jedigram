@@ -1,17 +1,30 @@
 import React from 'react';
 
 import PersonInfo, { InfoFields } from './PersonInfo';
-import Gallery from './Gallery';
+import Gallery, { GalleryItem } from './Gallery';
 
-const Profile = () => {
+const Profile = (props) => {
+
+	const { itemId } = props
+
 	return (
 		<>
-			<PersonInfo>
+			<PersonInfo itemId={itemId}>
 				<InfoFields label='Birth year: ' field='birthYear' />
 				<InfoFields label='Gender: ' field='gender' />
 				<InfoFields label='Eyes: ' field='eyeColor' />
 			</PersonInfo>
-			<Gallery />
+			<Gallery>
+				<GalleryItem />
+				<GalleryItem />
+				<GalleryItem />
+				<GalleryItem />
+				<GalleryItem />
+				<GalleryItem />
+				<GalleryItem />
+				<GalleryItem />
+				<GalleryItem />
+			</Gallery>
 		</>
 	);
 }
