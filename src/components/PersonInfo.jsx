@@ -18,11 +18,11 @@ class PersonInfo extends Component {
 		this.updateItem()
 	}
 
-	// componentDidUpdate(prevProps) {
-	// 	if (this.props.itemId !== prevProps.itemId) {
-	// 		this.updateItem();
-	// 	}
-	// }
+	componentDidUpdate(prevProps) {
+		if (this.props.itemId !== prevProps.itemId) {
+			this.updateItem();
+		}
+	}
 
 	updateItem() {
 		const { itemId, getData } = this.props;

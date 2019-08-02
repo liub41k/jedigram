@@ -12,34 +12,27 @@ import {
 
 class FeedPage extends Component {
 
-	// state = {
-	// 	users: [],
-	// 	loading: true
-	// }
+	state = {
+		currentPage: 1,
+		itemsPerRage: 3
+	}
 
-	// componentDidMount() {
-	// 	this.updateUsers()
-	// }
-
-	// updateUsers = () => {
-	// 	this.setState( {
-	// 		loading: true
-	// 	});
-
-	// 	this.props.getData()
-	// 		.then((users) => {
-	// 			this.setState({
-	// 				users,
-	// 				loading: false
-	// 			})
-	// 		})
-	// }
+	onPageChange = (e) => {
+		this.setState({
+			currentPage: Number(e.target.id)
+		})
+	}
 
 	render() {
 
 		const { users } = this.props;
+		const { currentPage, itemsPerRage } = this.state
 
-		const posts = users.map((item) => {
+		const indexOfLastItem = currentPage * itemsPerRage//3
+		const indexOfFirstItem = indexOfLastItem - itemsPerRage//0
+		const currentItems = users.slice(indexOfFirstItem, indexOfLastItem)
+
+		const posts = currentItems.map((item) => {
 
 			const { id } = item
 			
@@ -60,10 +53,39 @@ class FeedPage extends Component {
 			)
 		})
 
+		const pageNums = []
+		for (let i = 1; i <= Math.ceil(users.length/itemsPerRage); i++) {
+			pageNums.push(i)
+		}
+		const pagination = pageNums.map(num => {
+
+			const inputId = `toggle-${num}`
+			const clazz = `label-${num} centered`
+			const defaultChecked = num === 1 ? true : false
+
+			return (
+				<div className='toggle-group'
+					key={num}>
+						<input type='radio' name='toggle' id={inputId} defaultChecked={defaultChecked} />
+						<label
+							htmlFor={inputId}
+							className={clazz}
+							onClick={this.onPageChange}
+							id={num}>
+								{num}
+						</label>
+				</div>
+			);
+		 });
+
+
 		return (
 			<section className="feed">
 				<div className="feed__inner inner">
 					<div className="feed__main">
+						<div className="pagination">
+							{pagination}
+						</div>
 						{ posts }
 					</div>
 					<aside className="feed__aside">

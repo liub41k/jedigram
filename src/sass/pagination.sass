@@ -1,0 +1,29 @@
+.pagination
+	display: flex
+	justify-content: center
+	@media screen and (max-width: 700px)
+		flex-direction: column
+	input
+		display: none
+		@for $i from 1 through 5
+			&#toggle-#{$i}:checked ~ .label-#{$i}
+				width: 80px
+				// @media screen and (max-width: 700px)
+				// 	height: 120px
+				// 	width: auto
+	label
+		width: 60px
+		height: 25px
+		border-radius: 20px
+		margin: 0 10px
+		padding: 10px
+		background-color: $yellow
+		box-shadow: 0 5px 5px -5px rgba($yellow, 0.15), 0 10px 10px -5px rgba($yellow, 0.15)
+		color: $black
+		font-weight: 700
+		cursor: pointer
+		transition: 0.25s ease
+		@media screen and (max-width: 700px)
+			width: 25px
+			height: 60px
+			margin: 20px 0
