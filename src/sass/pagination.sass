@@ -1,16 +1,14 @@
 .pagination
 	display: flex
 	justify-content: center
-	@media screen and (max-width: 700px)
-		flex-direction: column
+	+nosel
 	input
 		display: none
 		@for $i from 1 through 5
 			&#toggle-#{$i}:checked ~ .label-#{$i}
 				width: 80px
-				// @media screen and (max-width: 700px)
-				// 	height: 120px
-				// 	width: auto
+				+xs
+					width: 70px
 	label
 		width: 60px
 		height: 25px
@@ -23,7 +21,6 @@
 		font-weight: 700
 		cursor: pointer
 		transition: 0.25s ease
-		@media screen and (max-width: 700px)
-			width: 25px
-			height: 60px
-			margin: 20px 0
+		+xs
+			width: 50px
+			margin: 0 8px

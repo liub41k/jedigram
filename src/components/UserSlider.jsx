@@ -37,6 +37,14 @@ const UserSlider = (props) => {
 					slidesToScroll: 1,
 					infinite: true
 				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true
+				}
 			}
 		]
 	}

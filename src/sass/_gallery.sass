@@ -1,11 +1,13 @@
 .gallery
 	&__content
-		padding-top: 40px
+		padding: 40px 0
 		position: relative
 		display: flex
 		align-items: center
 		flex-wrap: wrap
-		margin: -14px
+		margin: 0 -14px
+		+sm
+			justify-content: center
 		&::before
 			content: ''
 			position: absolute
@@ -17,3 +19,8 @@
 	&__item
 		width: calc(100%/3)
 		padding: 14px
+		+md
+			width: calc(100%/2)
+		+sm
+			width: 100%
+			max-width: 400px

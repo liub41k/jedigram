@@ -1,23 +1,39 @@
 .person
 	padding: 60px 0
+	+sm
+		padding: 30px 0
 	&__inner
 		display: flex
 		align-items: center
+		+sm
+			justify-content: center
 	&__img
 		+circle(150)
 		+cover
 		background-position: top center
 		margin: 0 100px 0 50px
+		flex-shrink: 0
+		+sm
+			margin: 0
+			margin-right: 20px
+			+circle(100)
 	&__title
 		margin-bottom: 20px
+		+sm
+			margin-bottom: 10px
 	&__info
 		display: flex
 		align-items: center
 		flex-wrap: wrap
+		+sm
+			flex-direction: column
+			align-items: flex-start
 	&__item
 		font-weight: 300
 		&:not(:last-child)
 			margin-right: 40px
+			+sm
+				margin-right: 0
 		span
 			font-weight: 700
 
@@ -27,3 +43,5 @@
 	font-size: 28px
 	line-height: 1.2
 	font-weight: 400
+	+sm
+		font-size: 20px

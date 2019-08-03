@@ -1,12 +1,22 @@
 .feed
-	padding-top: 60px
+	padding: 60px 0
+	+sm
+		padding: 30px 0
 	&__inner
 		padding: 0 60px
 		display: flex
+		+md
+			padding: 0 30px
+		+sm
+			padding: 0 15px
+			justify-content: center
 	&__main
 		max-width: 645px
 		width: 100%
 		padding-right: 30px
+		+sm
+			max-width: 400px
+			padding-right: 0
 	&__aside
 		position: sticky
 		top: 40px
@@ -16,7 +26,13 @@
 		border: 1px solid $white
 		border-radius: 4px
 		overflow: auto
+		+md
+			max-width: 250px
+		+sm
+			display: none
 
 
 .post
 	padding: 30px
+	+md
+		padding: 20px 0
