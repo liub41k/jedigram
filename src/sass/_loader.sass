@@ -3,23 +3,24 @@
 	padding: 50px 0
 	font-size: 50px
 	font-weight: 700
+	+xs
+		font-size: 40px
 	span
-		// position: relative
 		color: transparent
-		-webkit-text-stroke: 1px rgba($yellow, .2)
+		+nosel
 		+pseudo
 		&::before
 			content: attr(data-text)
 			z-index: 10
 			top: -4px
-			-webkit-text-stroke: 1px rgba($yellow, 1)
 			animation: load-before 1.4s ease-in-out infinite
+			color: $yellow
 		&::after
 			top: -4px
 			content: attr(data-text)
 			z-index: 9
-			-webkit-text-stroke: 1px rgba($yellow, .6)
 			animation: load-after 1.4s ease-in-out infinite
+			color: transparent
 		&:nth-child(1)::before, &:nth-child(1)::after
 			animation-delay: 0
 		&:nth-child(2)::before, &:nth-child(2)::after
@@ -54,3 +55,14 @@
 		transform: translate(0, 0)
 	50%
 		transform: translate(7px, -7px)
+
+@supports (-webkit-text-stroke: 1px rgba($yellow, 1))
+	.loader
+		span
+			color: transparent
+			-webkit-text-stroke: 1px rgba($yellow, .2)
+			&::before
+				color: transparent
+				-webkit-text-stroke: 1px rgba($yellow, 1)
+			&::after
+				-webkit-text-stroke: 1px rgba($yellow, .6)
