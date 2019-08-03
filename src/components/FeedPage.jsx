@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Picture from './Picture';
 import User from './User';
+import Users from './Users';
 
 import {
 	withData,
@@ -44,15 +45,6 @@ class FeedPage extends Component {
 			)
 		})
 
-		const friends = users.map((item) => {
-
-			const { id } = item
-			
-			return(
-				<User key={id} {...item} min/>
-			)
-		})
-
 		const pageNums = []
 		for (let i = 1; i <= Math.ceil(users.length/itemsPerRage); i++) {
 			pageNums.push(i)
@@ -89,7 +81,7 @@ class FeedPage extends Component {
 						{ posts }
 					</div>
 					<aside className="feed__aside">
-						{ friends }
+						<Users users={users} />
 					</aside>
 				</div>
 			</section>

@@ -2,15 +2,11 @@
 	background-color: $four
 	padding: 10px 0
 	+xs
-		padding: 0
+		padding: 5px 0
 	&__inner
 		display: flex
 		align-items: center
 		justify-content: space-between
-	&__search
-		padding: 0 20px
-		+sm
-			display: none
 
 .logo
 	&__link
@@ -26,11 +22,13 @@
 		height: 50px
 		margin-right: 8px
 		+xs
-			width: 62px
-			height: 62px
+			margin-right: 0
+			display: none
 	span
 		padding-left: 20px
 		position: relative
+		+xs
+			padding-left: 0
 		&:before
 			content: ''
 			position: absolute
@@ -40,8 +38,8 @@
 			width: 2px
 			height: 60%
 			background-color: #fff
-		+xs
-			display: none
+			+xs
+				display: none
 
 
 .nav
@@ -51,5 +49,10 @@
 		display: block
 		width: 67px
 		height: 50px
+		+xs
+			width: 60px
+			height: 40px
 		&:not(:last-child)
 			margin-right: 10px
+			+xs
+				margin-right: 0

@@ -16,9 +16,6 @@ const Header = () => {
 						<span>Jedigram</span>
 					</Link>
 				</h1>
-				<div className="header__search">
-					<input type="text" placeholder='search'/>
-				</div>
 				<nav className="header__nav nav">
 					<Link to="/jedigram/contacts/" className="nav__link" title='Contacts'>
 						<Contacts />

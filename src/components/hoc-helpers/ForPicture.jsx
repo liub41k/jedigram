@@ -28,7 +28,9 @@ const forPicture = (Comp) => {
 				})
 		}
 
-		onLike = () => {
+		onLike = (e) => {
+			e.preventDefault()
+			
 			this.setState((state) => {
 				
 				const newItem = { ...state, liked: !state.liked }
