@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "596a0cbeda98587e0ff7048b8afcb941",
+    "revision": "39c939ec6debc64d2446ab78902f4216",
     "url": "/jedigram/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jedigram/static/css/2.4e8ea85d.chunk.css"
   },
   {
-    "revision": "248b62744394b21db5b2",
-    "url": "/jedigram/static/css/main.cac0c047.chunk.css"
+    "revision": "11f32673696d77cea6b1",
+    "url": "/jedigram/static/css/main.8a33a22a.chunk.css"
   },
   {
     "revision": "fc9ea647a5ca84b72c42",
     "url": "/jedigram/static/js/2.7c2b59a5.chunk.js"
   },
   {
-    "revision": "248b62744394b21db5b2",
-    "url": "/jedigram/static/js/main.a1feea10.chunk.js"
+    "revision": "11f32673696d77cea6b1",
+    "url": "/jedigram/static/js/main.b4460377.chunk.js"
   },
   {
     "revision": "b889633a075d94c10eb0",
