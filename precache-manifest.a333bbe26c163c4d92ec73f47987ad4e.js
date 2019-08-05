@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3caa6dcf0ef026e634c8e022f804fea2",
+    "revision": "9b20b41e6753d32f642fd691ce2f1e7e",
     "url": "/jedigram/index.html"
   },
   {
-    "revision": "dedc18a44767db45d879",
+    "revision": "ea8bc1fb9b193e6da1b3",
     "url": "/jedigram/static/css/2.4e8ea85d.chunk.css"
   },
   {
-    "revision": "9403d70fba8bc991db35",
-    "url": "/jedigram/static/css/main.b98dc1bf.chunk.css"
+    "revision": "470a3a0c31867608bc3e",
+    "url": "/jedigram/static/css/main.e8e2af30.chunk.css"
   },
   {
-    "revision": "dedc18a44767db45d879",
-    "url": "/jedigram/static/js/2.d8ccea60.chunk.js"
+    "revision": "ea8bc1fb9b193e6da1b3",
+    "url": "/jedigram/static/js/2.8b3e5416.chunk.js"
   },
   {
-    "revision": "9403d70fba8bc991db35",
-    "url": "/jedigram/static/js/main.57d1e528.chunk.js"
+    "revision": "470a3a0c31867608bc3e",
+    "url": "/jedigram/static/js/main.ab4b2f66.chunk.js"
   },
   {
     "revision": "b889633a075d94c10eb0",
     "url": "/jedigram/static/js/runtime~main.7e4f2ff3.js"
+  },
+  {
+    "revision": "293faac49c44214c35c3e68870bc9d8a",
+    "url": "/jedigram/static/media/404.293faac4.svg"
   },
   {
     "revision": "928d53e044e49e26cfc3e60260b4f6c0",
